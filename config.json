@@ -1,0 +1,23 @@
+{
+	"plugins": ["node_modules/jsdoc/plugins/markdown"],
+	"recurseDepth": 10,
+	"source": {
+		"include": ["src/js/app.js", "src/js/modules/", "src/js/modules/card-actions", "src/js/modules/confirmations", "src/js/modules/core", "src/js/modules/dialogs", "src/js/modules/ebeditor", "src/js/modules/forms", "src/js/modules/forms/send", "src/js/modules/handlers/", "src/js/modules/handlers/error-state", "src/js/modules/handlers/notify", "src/js/modules/handlers/ui", "src/js/modules/messaging-center", "src/js/modules/plugins", "src/js/modules/save", "src/js/modules/send-email", "src/js/modules/services"],
+		"includePattern": ".+\\.js(doc|x)?$",
+		"excludePattern": "(^|\\README/|\\\\)_"
+	},
+	"sourceType": "module",
+	"tags": {
+		"allowUnknownTags": true,
+		"dictionaries": ["jsdoc", "closure"]
+	},
+	"templates": {
+		"cleverLinks": false,
+		"monospaceLinks": false,
+		"better-docs": {
+            "name": "eCards Documentation",
+            "appName": "eCards Application"
+        }
+	}
+
+}
